@@ -1,0 +1,134 @@
+		html,
+		body {
+			padding: 0;
+			margin: 0;
+		}
+
+		.main-logo{
+			background-image: url('/media/images/Logo_Kupboard_logo_c.svg');
+			background-position:  0 center;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 135px;
+			height: 50px;
+		}
+
+		.navbar .nav-link .fa-sign-in{
+			color:rgba(0, 0, 0, 0.5);
+		}
+		.navbar .nav-link:hover .fa-sign-in{
+			color:rgba(0, 0, 0, 0.7);
+		}
+		.navbar-toggler-icon {
+			font-size: 0.5em;
+		}
+
+		.navbar-toggler {
+			padding: .2em .4em;
+		}
+
+		.jumbotron-fluid h2,
+		.carousel-item h2 {
+			font-size: 178%;
+		}
+
+		.jumbotron-fluid h2~.lead,
+		.carousel-item h2~.lead {
+			line-height: 1.5;
+			font-size: 95%;
+		}
+
+		.graybar-shift {
+			border-top: solid 15em #575757;
+			margin-top: -13em;
+
+		}
+
+		.prefoot {
+			background: #575757;
+		}
+
+		.prefoot .col-12.lead h5 {
+			text-align: center;
+			font-size: 135%;
+			line-height: 1.2;
+			font-weight: 300;
+		}
+
+		.prefoot .col-12.lead p {
+			text-align: center;
+			font-size: 80%;
+			line-height: 1.35;
+			font-weight: 300;
+		}
+
+		.main-wrap .card.border-width {
+			border-width: 2px !important;
+		}
+
+		.main-wrap .card-title,
+		.main-wrap .media h3 {
+			text-transform: uppercase;
+			font-weight: 900;
+		}
+
+		footer.container>* {
+			display: flex;
+			justify-content: center;
+
+		}
+
+		.social-footer a {
+			border: 2px solid;
+			border-radius: 50%;
+			margin: 0.5em;
+			height: 2em;
+			width: 2em;
+			display: flex !important;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		footer.container nav,
+		footer.container nav+div {
+			align-items: center;
+			font-size: 70%;
+			padding: .3em;
+		}
+
+		footer.container nav a {
+			padding: 0 .5em;
+		}
+
+		.bg-shadefade {
+			background: -moz-linear-gradient(90deg, rgba(0, 0, 0, .5) 12.25%, rgba(0, 0, 0, 0) 100%);
+			background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .5) 12.25%, rgba(0, 0, 0, 0) 100%);
+			background: linear-gradient(90deg, rgba(0, 0, 0, .5) 12.25%, rgba(0, 0, 0, 0) 100%);
+		}
+
+		.bg-shade {
+			background: rgba(0, 0, 0, .5);
+		}
+
+		.bg-shadefade .has-bg,
+		.bg-shade .has-bg {
+			color: #fff;
+			text-shadow: 0 0 .2em #000;
+		}
+
+		.bg-tintfade {
+			background: -moz-linear-gradient(90deg, rgba(255, 255, 255, .5) 12.25%, rgba(255, 255, 255, 0) 100%);
+			background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, .5) 12.25%, rgba(255, 255, 255, 0) 100%);
+			background: linear-gradient(90deg, rgba(255, 255, 255, .5) 12.25%, rgba(255, 255, 255, 0) 100%);
+		}
+
+		.bg-tint {
+			background: rgba(255, 255, 255, .5);
+		}
+
+		.bg-tintfade .has-bg,
+		.bg-tint .has-bg{
+			color: #000;
+			text-shadow: 0 0 .2em #fff;
+		}
