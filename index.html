@@ -4,10 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<title>Default Page</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Welcome to KupBoard</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8">
 </head>
 
@@ -16,17 +15,17 @@
 		<div class="navbar-wrap sticky-top bg-info">
 			<div class="container p-0 ">
 				<nav class="navbar navbar-light navbar-expand-sm">
-					<a href="#" class="navbar-brand text-hide main-logo">Kupboard</a>
-					<a class="nav-link ml-auto"><i class="fa fa-sign-in " aria-hidden="true"></i></a>
+					<a href="index.html" class="navbar-brand text-hide main-logo">Kupboard</a>
+					<a class="nav-link ml-auto" href="login.html"><i class="fa fa-sign-in " aria-hidden="true"></i></a>
 					<button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavLinks">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse flex-grow-0" id="mainNavLinks">
 						<ul class="navbar-nav">
-							<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Find</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Join</a></li>
+							<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+							<li class="nav-item"><a href="find.html" class="nav-link">Find</a></li>
+							<li class="nav-item"><a href="signup.html" class="nav-link">Join</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -45,17 +44,19 @@
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<picture class="d-block w-100">
-								<source media="(max-width:576px)" srcset="/media/images/540x250.png">
-								<source media="(max-width:768px)" srcset="/media/images/720x360.png">
-								<source media="(max-width:992px)" srcset="/media/images/960x400.png">
-								<source media="(max-width:1200px)" srcset="/media/images/1140x440.png">
-								<img src="/media/images/1140x440.png" class="d-block w-100">
+								<source media="(max-width:576px)" srcset="media/images/540x250.png">
+								<source media="(max-width:768px)" srcset="media/images/720x360.png">
+								<source media="(max-width:992px)" srcset="media/images/960x400.png">
+								<source media="(max-width:1200px)" srcset="media/images/1140x440.png">
+								<img src="media/images/1140x440.png" class="d-block w-100">
 							</picture>
-							<div class="card-img-overlay row no-gutters align-items-center  bg-shadefade">
+							<div class="card-img-overlay row no-gutters align-items-center bg-shadefade">
 								<div class="col-sm-8 col-md-6 ml-4 text-sm-left text-center">
-									<h2 class="display-4  text-center text-md-left"> Some Motivational Header Text
+									<h2 class="display-4  text-center text-md-left txt-over-bg"> Some Motivational
+										Header Text
 										Goes&nbsp;Here.#1</h2>
-									<p class="lead d-none d-md-block  ">Lorem ipsum dolor sit amet, consectetur
+									<p class="lead d-none d-md-block  txt-over-bg ">Lorem ipsum dolor sit amet,
+										consectetur
 										adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 										aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
 										ut aliquip ex ea commodo consequat.</p>
@@ -65,17 +66,19 @@
 						</div>
 						<div class="carousel-item">
 							<picture class="d-block w-100">
-								<source media="(max-width:576px)" srcset="/media/images/540x250.png">
-								<source media="(max-width:768px)" srcset="/media/images/720x360.png">
-								<source media="(max-width:992px)" srcset="/media/images/960x400.png">
-								<source media="(max-width:1200px)" srcset="/media/images/1140x440.png">
-								<img src="/media/images/1140x440.png" class="d-block w-100">
+								<source media="(max-width:576px)" srcset="media/images/540x250.png">
+								<source media="(max-width:768px)" srcset="media/images/720x360.png">
+								<source media="(max-width:992px)" srcset="media/images/960x400.png">
+								<source media="(max-width:1200px)" srcset="media/images/1140x440.png">
+								<img src="media/images/1140x440.png" class="d-block w-100">
 							</picture>
-							<div class="card-img-overlay row no-gutters align-items-center  bg-shadefade">
-								<div class="col-sm-8 col-md-6 ml-4 text-sm-left text-center  ">
-									<h2 class="display-4  text-center text-md-left"> Some Motivational Header Text
+							<div class="card-img-overlay row no-gutters align-items-center bg-shadefade">
+								<div class="col-sm-8 col-md-6 ml-4 text-sm-left text-center">
+									<h2 class="display-4  text-center text-md-left txt-over-bg"> Some Motivational
+										Header Text
 										Goes&nbsp;Here.#2</h2>
-									<p class="lead d-none d-md-block  ">Lorem ipsum dolor sit amet, consectetur
+									<p class="lead d-none d-md-block  txt-over-bg ">Lorem ipsum dolor sit amet,
+										consectetur
 										adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 										aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
 										ut aliquip ex ea commodo consequat.</p>
@@ -85,17 +88,19 @@
 						</div>
 						<div class=" carousel-item">
 							<picture class="d-block w-100">
-								<source media="(max-width:576px)" srcset="/media/images/540x250.png">
-								<source media="(max-width:768px)" srcset="/media/images/720x360.png">
-								<source media="(max-width:992px)" srcset="/media/images/960x400.png">
-								<source media="(max-width:1200px)" srcset="/media/images/1140x440.png">
-								<img src="/media/images/1140x440.png" class="d-block w-100">
+								<source media="(max-width:576px)" srcset="media/images/540x250.png">
+								<source media="(max-width:768px)" srcset="media/images/720x360.png">
+								<source media="(max-width:992px)" srcset="media/images/960x400.png">
+								<source media="(max-width:1200px)" srcset="media/images/1140x440.png">
+								<img src="media/images/1140x440.png" class="d-block w-100">
 							</picture>
-							<div class="card-img-overlay row no-gutters align-items-center  bg-shadefade">
+							<div class="card-img-overlay row no-gutters align-items-center bg-shadefade">
 								<div class="col-sm-8 col-md-6 ml-4 text-sm-left text-center">
-									<h2 class="display-4  text-center text-md-left"> Some Motivational Header Text
+									<h2 class="display-4  text-center text-md-left txt-over-bg"> Some Motivational
+										Header Text
 										Goes&nbsp;Here.#3</h2>
-									<p class="lead d-none d-md-block  ">Lorem ipsum dolor sit amet, consectetur
+									<p class="lead d-none d-md-block txt-over-bg">Lorem ipsum dolor sit amet,
+										consectetur
 										adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 										aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
 										ut aliquip ex ea commodo consequat.</p>
@@ -120,7 +125,7 @@
 	<div class="main-wrap ">
 		<div class="container">
 			<div class="media row py-5">
-				<img class="align-self-center mb-5 mt-3 mx-auto order-2 order-md-1" src="/media/images/180x180.png"
+				<img class="align-self-center mb-3 mt-3 mx-auto order-2 order-md-1" src="media/images/180x180.png"
 					alt="Generic placeholder image">
 				<div class="  col-12   col-md-8 mx-auto order-md-2">
 					<h3 class="text-info  text-center text-md-left">Missing Hand Bread image Headline</h3>
@@ -134,7 +139,7 @@
 			<div class="row">
 				<div class="col-sm-6 col-lg-3">
 					<div class="card  mb-4 border border-info border-width">
-						<img class="card-img-top" src="/media/images/240x250.png">
+						<img class="card-img-top" src="media/images/240x250.png">
 						<h4 class="card-title text-white bg-info p-3 m-0 text-center">Some Card Head Statement</h4>
 						<div class="card-body">
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -147,7 +152,7 @@
 				</div>
 				<div class="col-sm-6 col-lg-3">
 					<div class="card  mb-4 border border-info border-width">
-						<img class="card-img-top" src="/media/images/240x250.png">
+						<img class="card-img-top" src="media/images/240x250.png">
 						<h4 class="card-title text-white bg-info p-3 m-0  text-center">Some Card Head Statement</h4>
 						<div class="card-body">
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -160,7 +165,7 @@
 				</div>
 				<div class="col-sm-6 col-lg-3">
 					<div class="card  mb-4 border border-info border-width">
-						<img class="card-img-top" src="/media/images/240x250.png">
+						<img class="card-img-top" src="media/images/240x250.png">
 						<h4 class="card-title text-white bg-info p-3 m-0  text-center">Some Card Head Statement</h4>
 						<div class="card-body">
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -173,7 +178,7 @@
 				</div>
 				<div class="col-sm-6 col-lg-3">
 					<div class="card  mb-4 border border-info border-width text-center">
-						<img class="card-img-top" src="/media/images/240x250.png">
+						<img class="card-img-top" src="media/images/240x250.png">
 						<h4 class="card-title text-white bg-info p-3 m-0">Some Card Head Statement</h4>
 						<div class="card-body">
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -211,24 +216,16 @@
 				<a href="#" class="text-primary btn"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
 			</div>
 			<nav class="footnav">
-				<a href="#">Home</a>|
-				<a href="#">About</a>|
-				<a href="#">Find</a>|
-				<a href="#">Join</a>
+				<a href="index.html">Home</a>|
+				<a href="about.html">About</a>|
+				<a href="find.html">Find</a>|
+				<a href="signup.html">Join</a>
 			</nav>
 			<div class="copyright">&copy;2020 Kupboard/Ray Messina Design</div>
 		</footer>
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-			crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-			crossorigin="anonymous"></script>
-
-		</script>
+		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,134 +1,207 @@
-		html,
-		body {
-			padding: 0;
-			margin: 0;
-		}
 
-		.main-logo{
-			background-image: url('/media/images/Logo_Kupboard_logo_c.svg');
-			background-position:  0 center;
-			background-repeat: no-repeat;
-			background-size: 100%;
-			width: 135px;
-			height: 50px;
-		}
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-color:#ececec;
+}
 
-		.navbar .nav-link .fa-sign-in{
-			color:rgba(0, 0, 0, 0.5);
-		}
-		.navbar .nav-link:hover .fa-sign-in{
-			color:rgba(0, 0, 0, 0.7);
-		}
-		.navbar-toggler-icon {
-			font-size: 0.5em;
-		}
+.main-logo{
+	background-image: url('../media/images/Logo_Kupboard_logo_c.svg');
+	background-position:  0 center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 135px;
+	height: 50px;
+}
 
-		.navbar-toggler {
-			padding: .2em .4em;
-		}
+.navbar-toggler-icon {
+	font-size: 0.5em;
+}
 
-		.jumbotron-fluid h2,
-		.carousel-item h2 {
-			font-size: 178%;
-		}
+.navbar-toggler {
+	padding: .2em .4em;
+}
 
-		.jumbotron-fluid h2~.lead,
-		.carousel-item h2~.lead {
-			line-height: 1.5;
-			font-size: 95%;
-		}
+.brand-wrap .jumbotron h2, .brand-wrap .carousel h2{
+	font-size: 178%;
+	font-weight: lighter;
+}
 
-		.graybar-shift {
-			border-top: solid 15em #575757;
-			margin-top: -13em;
+.brand-wrap .jumbotron h2~.lead, .brand-wrap .carousel h2~.lead  {
+	line-height: 1.5;
+	font-size: 95%;
+}
 
-		}
+.graybar-shift {
+	border-top: solid 15em #575757;
+	margin-top: -13em;
 
-		.prefoot {
-			background: #575757;
-		}
+}
 
-		.prefoot .col-12.lead h5 {
-			text-align: center;
-			font-size: 135%;
-			line-height: 1.2;
-			font-weight: 300;
-		}
+.prefoot {
+	background: #575757;
+}
 
-		.prefoot .col-12.lead p {
-			text-align: center;
-			font-size: 80%;
-			line-height: 1.35;
-			font-weight: 300;
-		}
+.prefoot .col-12.lead h5 {
+	text-align: center;
+	font-size: 135%;
+	line-height: 1.1;
+	font-weight: lighter;
+}
 
-		.main-wrap .card.border-width {
-			border-width: 2px !important;
-		}
+.prefoot .col-12.lead p {
+	text-align: center;
+	font-size: 72%;
+	line-height: 1.55;
+	font-weight: 300;
+}
 
-		.main-wrap .card-title,
-		.main-wrap .media h3 {
-			text-transform: uppercase;
-			font-weight: 900;
-		}
+.main-wrap .card.border-width {
+	border-width: 2px !important;
+}
 
-		footer.container>* {
-			display: flex;
-			justify-content: center;
+.main-wrap .card-title,
+.main-wrap .media h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
 
-		}
+footer.container>* {
+	display: flex;
+	justify-content: center;
 
-		.social-footer a {
-			border: 2px solid;
-			border-radius: 50%;
-			margin: 0.5em;
-			height: 2em;
-			width: 2em;
-			display: flex !important;
-			justify-content: center;
-			align-items: center;
+}
 
-		}
+.social-footer a {
+	border: 2px solid;
+	border-radius: 50%;
+	margin: 0.5em;
+	height: 2em;
+	width: 2em;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
 
-		footer.container nav,
-		footer.container nav+div {
-			align-items: center;
-			font-size: 70%;
-			padding: .3em;
-		}
+}
 
-		footer.container nav a {
-			padding: 0 .5em;
-		}
+footer.container nav,
+footer.container nav+div {
+	align-items: center;
+	font-size: 70%;
+	padding: .3em;
+}
 
-		.bg-shadefade {
-			background: -moz-linear-gradient(90deg, rgba(0, 0, 0, .5) 12.25%, rgba(0, 0, 0, 0) 100%);
-			background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .5) 12.25%, rgba(0, 0, 0, 0) 100%);
-			background: linear-gradient(90deg, rgba(0, 0, 0, .5) 12.25%, rgba(0, 0, 0, 0) 100%);
-		}
+footer.container nav a {
+	padding: 0 .5em;
+}
 
-		.bg-shade {
-			background: rgba(0, 0, 0, .5);
-		}
+.form-check-label small {
+	margin-top: .5em;
+	display: inline-block;
+}
 
-		.bg-shadefade .has-bg,
-		.bg-shade .has-bg {
-			color: #fff;
-			text-shadow: 0 0 .2em #000;
-		}
+.navbar-wrap .navbar a {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+}
+.navbar a .fa-sign-in{
+	color: rgba(0,0,0,.5);
+}
+.navbar a:hover .fa-sign-in{
+	color: rgba(0,0,0,.7);
+}
 
-		.bg-tintfade {
-			background: -moz-linear-gradient(90deg, rgba(255, 255, 255, .5) 12.25%, rgba(255, 255, 255, 0) 100%);
-			background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, .5) 12.25%, rgba(255, 255, 255, 0) 100%);
-			background: linear-gradient(90deg, rgba(255, 255, 255, .5) 12.25%, rgba(255, 255, 255, 0) 100%);
-		}
+.bottom-rule {
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	padding-bottom: 1em;
+}
 
-		.bg-tint {
-			background: rgba(255, 255, 255, .5);
-		}
+.top-rule {
+	border-top: 1px solid rgba(0, 0, 0, .1);
+	padding-top: 1em;
+}
 
-		.bg-tintfade .has-bg,
-		.bg-tint .has-bg{
-			color: #000;
-			text-shadow: 0 0 .2em #fff;
-		}
+small {
+	font-size: 65%;
+}
+
+.no-gutters p.small-pad-x {
+	padding-left: 1.625em;
+	padding-right: 1.625em;
+}
+
+.form-container {
+	box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+
+.center-logo-50 {
+	margin-left: 23.4%;
+	display: block;
+	width: 50%;
+	padding-top: 2em;
+	padding-bottom: .5em;
+}
+
+.bg-shadefade {
+	background: -moz-linear-gradient(90deg, rgba(0, 0, 0, .5) 12.25%, rgba(0, 0, 0, 0) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .5) 12.25%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(90deg, rgba(0, 0, 0, .5) 12.25%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bg-shade {
+	background: rgba(0, 0, 0, .5);
+}
+
+.bg-shadefade .txt-over-bg,
+.bg-shade .txt-over-bg {
+	color: #fff;
+	text-shadow: 0 0 .2em #000;
+}
+
+.bg-tintfade {
+	background: -moz-linear-gradient(90deg, rgba(255, 255, 255, .5) 12.25%, rgba(255, 255, 255, 0) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, .5) 12.25%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(90deg, rgba(255, 255, 255, .5) 12.25%, rgba(255, 255, 255, 0) 100%);
+}
+
+.bg-tint {
+	background: rgba(255, 255, 255, .5);
+}
+
+.bg-tintfade .txt-over-bg,
+.bg-tint .txt-over-bg {
+	color: #000;
+	text-shadow: 0 0 .2em #fff;
+}
+
+
+.results-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+}
+
+.results-list>li {
+	border-top: #ccc 1px solid;
+	padding: 1em 0 0 0;
+}
+
+.results-list>li:nth-child(odd) {
+	background-color: rgba(0, 0, 0, .15);
+
+}
+
+.results-list dl.row {
+	margin-bottom: 0;
+}
+
+.schedule>* {
+	display: inline-block
+}
+
+.results-list a {
+	display: block;
+	text-decoration: none;
+	color: #333;
+}
