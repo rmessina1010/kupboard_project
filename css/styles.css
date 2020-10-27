@@ -67,7 +67,7 @@ body {
 	font-weight: 700;
 }
 
-footer.container>* {
+.site-footer>* {
 	display: flex;
 	justify-content: center;
 
@@ -85,14 +85,14 @@ footer.container>* {
 
 }
 
-footer.container nav,
-footer.container nav+div {
+.site-footer nav,
+.site-footer nav+div {
 	align-items: center;
 	font-size: 70%;
 	padding: .3em;
 }
 
-footer.container nav a {
+.site-footer nav a {
 	padding: 0 .5em;
 }
 
@@ -107,7 +107,7 @@ footer.container nav a {
 .navbar a .fa-sign-in{
 	color: rgba(0,0,0,.5);
 }
-.navbar a:hover .fa-sign-in{
+.navbar a:hover .fa-sign-in, .navbar a.active .fa-sign-in{
 	color: rgba(0,0,0,.7);
 }
 
