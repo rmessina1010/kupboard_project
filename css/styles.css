@@ -4,6 +4,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color:#ececec;
+	color:#444;
 }
 
 .main-logo{
@@ -38,6 +39,7 @@ body {
 	margin-top: -13em;
 
 }
+
 
 .prefoot {
 	background: #575757;
@@ -91,6 +93,7 @@ body {
 	font-size: 70%;
 	padding: .3em;
 }
+
 
 .site-footer nav a {
 	padding: 0 .5em;
@@ -204,4 +207,64 @@ small {
 	display: block;
 	text-decoration: none;
 	color: #333;
+}
+.ledger{
+	margin-bottom: 1.25em;;
+}
+.ledger-head {
+	padding: .25em;
+ 	border: 1px solid var(--secondary);
+ 	color:   var(--primary);
+  	text-transform: uppercase;
+	text-align: center;
+	background: #fff;
+ 	border-radius:3px;
+}
+
+.kb-item-group{
+	padding:.5em .75em;
+	margin-bottom:.5em;
+	background-color: var(--secondary);
+	color: var(--white);
+	border-radius:3px;
+
+}
+
+.kb-announce .card-header{
+ 	background-color: var(--secondary);
+}
+
+.kb-announce .card-title{
+	margin: 0;
+	color: var(--white);
+}
+
+.ledger>a{
+	color:   var(--primary);
+	text-decoration:none;
+}
+
+.carousel-indicators {
+	 bottom: .6%;
+
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    height: .67rem;
+    width: .67rem;
+    background-color: var(--info);
+	color:#fff;
+  	border:1px solid var(--white);
+
+}
+
+.carousel-indicators li.active {
+    background-color: var(--white);
+	color:#000;
+
+}
+
+a.carousel-control-next, a.carousel-control-prev{
+	width: 3rem;
 }
