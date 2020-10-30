@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>Welcome to KupBoard</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8">
+</head>
+
+<body>
+	<header>
+		<div class="navbar-wrap sticky-top bg-info">
+			<div class="container-fluid container-xl p-0 ">
+				<nav class="navbar navbar-light navbar-expand-sm">
+					<a href="index.html" class="navbar-brand text-hide main-logo">Kupboard</a>
+					<a class="nav-link ml-auto" href="login.html"><i class="fa fa-sign-in " aria-hidden="true"></i></a>
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavLinks">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse flex-grow-0" id="mainNavLinks">
+						<ul class="navbar-nav">
+							<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+							<li class="nav-item"><a href="find.html" class="nav-link active">Find</a></li>
+							<li class="nav-item"><a href="signup.html" class="nav-link">Join</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="brand-wrap">
+			<div class="container-fluid container-xl p-0">
+				<div class="branding jumbotron jumbotron-fluid p-0 m-0 position-relative">
+					<picture class="d-block w-100">
+						<source media="(max-width:576px)" srcset="media/images/540x250.png">
+						<source media="(max-width:768px)" srcset="media/images/720x360.png">
+						<source media="(max-width:992px)" srcset="media/images/960x400.png">
+						<source media="(max-width:1200px)" srcset="media/images/1140x440.png">
+						<img src="media/images/1140x440.png" class="d-block w-100">
+					</picture>
+					<div class="card-img-overlay row no-gutters align-items-center bg-shadefade">
+						<div class="col-sm-8 col-md-6 ml-4 text-sm-left text-center">
+							<h2 class="display-4  txt-over-bg"> My Kupboard Name</h2>
+							<p class="lead d-none d-md-block txt-over-bg ">Manage your Kupboard here.</p>
+							<a href="kupboard_view.html" class="btn btn-primary btn-sm text-white">View your
+								Kupboard</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="main-wrap ">
+		<div class="container-fluid container-xl py-4">
+			<div class="row">
+				<div class="col-md-6 pb-4">
+					<div class="input-group mb-3  no-gutters">
+						<input type="text" class="form-control">
+						<input type="number" min="0" class="form-control col-2">
+						<div class="input-group-append">
+							<div class="input-group-text">
+								<input type="checkbox">
+							</div>
+							<div class="input-group-text">
+								<input type="checkbox">
+							</div>
+							<div class="input-group-text">
+								<input type="checkbox">
+							</div>
+						</div>
+					</div>
+					<hr class="d-block d-md-none mt-5">
+				</div>
+				<div class="col-md-6">
+					<h5 class="dash-header">Comments</h5>
+					<ul id="comments-area" class="list-unstyled">
+						<li class="comment-text">
+							<textarea name="comment" class="form-control col-12 mb-3">ss </textarea>
+							<i class="fa fa-close"></i>
+						</li>
+						<li class="comment-text">
+							<textarea name="comment" class="form-control col-12 mb-3">ss </textarea>
+							<i class="fa fa-close"></i>
+						</li>
+						<li class="comment-text">
+							<textarea name="comment" class="form-control col-12 mb-3">ss </textarea>
+							<i class="fa fa-close"></i>
+						</li>
+					</ul>
+					<button type="button" class="btn btn-secondary btn-block" id="addAnounce">Add Comment
+						Area</button>
+					<h5 class="dash-header">Images</h5>
+					<div class="row">
+						<div class="col-6">
+							<img src="media/images/240x180.png" alt="" class="img-thumbnail">
+						</div>
+						<div class="col-6">
+							<label class="d-block">Header Image</label>
+							<div class="input-group mb-3 m-0">
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="headerIMG"
+										aria-describedby="thumbIMG">
+									<label class="custom-file-label" for="headerIMG">Choose file</label>
+								</div>
+							</div>
+
+							<label class="d-block">Thumbnail Image</label>
+
+							<div class="input-group mb-3 m-0">
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="thumbIMG"
+										aria-describedby="thumbIMG">
+									<label class="custom-file-label" for="thumbIMG">Choose file</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h5 class="dash-header">Hours</h5>
+					<div class="row">
+						<div class="form-group col-3">
+							<label for="address">Day</label>
+							<select name="days-1" id="days1" class="form-control" required>
+								<option value="">Select:</option>
+								<option value="1">Mon</option>
+								<option value="2">Tue</option>
+								<option value="3">Wed</option>
+								<option value="4">Thrs</option>
+								<option value="5">Fri</option>
+								<option value="6">Sat</option>
+								<option value="7">Sun</option>
+							</select>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Day</label>
+							<select name="days-1" id="days1" class="form-control" required>
+								<option value="">Select:</option>
+								<option value="1">Mon</option>
+								<option value="2">Tue</option>
+								<option value="3">Wed</option>
+								<option value="4">Thrs</option>
+								<option value="5">Fri</option>
+								<option value="6">Sat</option>
+								<option value="7">Sun</option>
+							</select>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Open</label>
+							<input class="form-control" type="text" name="address" id="address"
+								placeholder="628 N First" required>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Close</label>
+							<input class="form-control" type="text" name="address" id="address"
+								placeholder="628 N First" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-3">
+							<label for="address">Day</label>
+							<select name="days-1" id="days1" class="form-control" required>
+								<option value="">Select:</option>
+								<option value="1">Mon</option>
+								<option value="2">Tue</option>
+								<option value="3">Wed</option>
+								<option value="4">Thrs</option>
+								<option value="5">Fri</option>
+								<option value="6">Sat</option>
+								<option value="7">Sun</option>
+							</select>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Day</label>
+							<select name="days-1" id="days1" class="form-control" required>
+								<option value="">Select:</option>
+								<option value="1">Mon</option>
+								<option value="2">Tue</option>
+								<option value="3">Wed</option>
+								<option value="4">Thrs</option>
+								<option value="5">Fri</option>
+								<option value="6">Sat</option>
+								<option value="7">Sun</option>
+							</select>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Open</label>
+							<input class="form-control" type="text" name="address" id="address"
+								placeholder="628 N First" required>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Close</label>
+							<input class="form-control" type="text" name="address" id="address"
+								placeholder="628 N First" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-3">
+							<label for="address">Day</label>
+							<select name="days-1" id="days1" class="form-control" required>
+								<option value="">Select:</option>
+								<option value="1">Mon</option>
+								<option value="2">Tue</option>
+								<option value="3">Wed</option>
+								<option value="4">Thrs</option>
+								<option value="5">Fri</option>
+								<option value="6">Sat</option>
+								<option value="7">Sun</option>
+							</select>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Day</label>
+							<select name="days-1" id="days1" class="form-control" required>
+								<option value="">Select:</option>
+								<option value="1">Mon</option>
+								<option value="2">Tue</option>
+								<option value="3">Wed</option>
+								<option value="4">Thrs</option>
+								<option value="5">Fri</option>
+								<option value="6">Sat</option>
+								<option value="7">Sun</option>
+							</select>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Open</label>
+							<input class="form-control" type="text" name="address" id="address"
+								placeholder="628 N First" required>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Close</label>
+							<input class="form-control" type="text" name="address" id="address"
+								placeholder="628 N First" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-3">
+							<label for="address">Day</label>
+							<select name="days-1" id="days1" class="form-control" required>
+								<option value="">Select:</option>
+								<option value="1">Mon</option>
+								<option value="2">Tue</option>
+								<option value="3">Wed</option>
+								<option value="4">Thrs</option>
+								<option value="5">Fri</option>
+								<option value="6">Sat</option>
+								<option value="7">Sun</option>
+							</select>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Day</label>
+							<select name="days-1" id="days1" class="form-control" required>
+								<option value="">Select:</option>
+								<option value="1">Mon</option>
+								<option value="2">Tue</option>
+								<option value="3">Wed</option>
+								<option value="4">Thrs</option>
+								<option value="5">Fri</option>
+								<option value="6">Sat</option>
+								<option value="7">Sun</option>
+							</select>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Open</label>
+							<input class="form-control" type="text" name="address" id="address"
+								placeholder="628 N First" required>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Close</label>
+							<input class="form-control" type="text" name="address" id="address"
+								placeholder="628 N First" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-3">
+							<label for="address">Day</label>
+							<select name="days-1" id="days1" class="form-control" required>
+								<option value="">Select:</option>
+								<option value="1">Mon</option>
+								<option value="2">Tue</option>
+								<option value="3">Wed</option>
+								<option value="4">Thrs</option>
+								<option value="5">Fri</option>
+								<option value="6">Sat</option>
+								<option value="7">Sun</option>
+							</select>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Day</label>
+							<select name="days-1" id="days1" class="form-control" required>
+								<option value="">Select:</option>
+								<option value="1">Mon</option>
+								<option value="2">Tue</option>
+								<option value="3">Wed</option>
+								<option value="4">Thrs</option>
+								<option value="5">Fri</option>
+								<option value="6">Sat</option>
+								<option value="7">Sun</option>
+							</select>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Open</label>
+							<input class="form-control" type="text" name="address" id="address"
+								placeholder="628 N First" required>
+						</div>
+						<div class="form-group col-3">
+							<label for="address">Close</label>
+							<input class="form-control" type="text" name="address" id="address"
+								placeholder="628 N First" required>
+						</div>
+					</div>
+					<h5 class="dash-header">Location</h5>
+					<div class="form-group">
+						<label for="address">Street Address</label>
+						<input class="form-control" type="text" name="address" id="address" placeholder="628 N First"
+							required>
+					</div>
+					<div class="row">
+						<div class="col-6  form-group">
+							<label for="city">City</label>
+							<input class="form-control" type="text" name="city" id="city" placeholder="Madison"
+								required>
+						</div>
+						<div class="col-6 form-group">
+							<label for="state">State</label>
+							<select name="state" id="state" class="form-control" required>
+								<option value="">Select:</option>
+								<option value="1">AL</option>
+								<option value="2">AR</option>
+								<option value="3">AK</option>
+								<option value="4">CA</option>
+								<option value="5">IL</option>
+								<option value="6">MA</option>
+								<option value="7">NY</option>
+								<option value="8">NY</option>
+								<option value="9">PA</option>
+								<option value="10">WI</option>
+							</select>
+						</div>
+					</div>
+					<h5 class="dash-header">Details</h5>
+					<div class="row pb-2">
+						<div class="col-6">
+							<label>First Name</label>
+							<input type="text" name="FirstName" id="FirstName" class="form-control">
+						</div>
+						<div class="col-6">
+							<label>Last Name</label>
+							<input type="text" name="FirstName" id="LasttName" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="text" name="email" id="email" class="form-control">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="prefoot">
+		<div class="container-fluid container-xl">
+			<div class="row">
+				<div class="col-12 col-md-8 col-xl-6 mx-auto py-4 lead">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.225782843878!2d-89.08652298454645!3d42.27370347919271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8808be329a526b9b%3A0x161b80f6a0c78725!2s628%20N%201st%20St%2C%20Rockford%2C%20IL%2061107!5e0!3m2!1sen!2sus!4v1603439328990!5m2!1sen!2sus"
+						width="100%" height="300px" frameborder="0" style="border:5px #fff solid;" allowfullscreen=""
+						aria-hidden="false" tabindex="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="site-footer container-fluid container-xl py-3">
+		<div class="social-footer">
+			<a href="#" class="text-primary btn"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#" class="text-primary btn"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="#" class="text-primary btn"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#" class="text-primary btn"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			<a href="#" class="text-primary btn"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+		</div>
+		<nav class="footnav">
+			<a href="index.html">Home</a>|
+			<a href="about.html">About</a>|
+			<a href="find.html">Find</a>|
+			<a href="signup.html">Join</a>
+		</nav>
+		<div class="copyright">&copy;2020 Kupboard/Ray Messina Design</div>
+	</footer>
+	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>

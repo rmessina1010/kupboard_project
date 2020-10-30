@@ -174,7 +174,7 @@ small {
 .bg-tintfade .txt-over-bg,
 .bg-tint .txt-over-bg {
 	color: #000;
-	text-shadow: 0 0 .2em #fff;
+	text-shadow: 0 0 .2em var(--white);
 }
 
 
@@ -192,7 +192,6 @@ small {
 
 .results-list>li:nth-child(odd) {
 	background-color: rgba(0, 0, 0, .15);
-
 }
 
 .results-list dl.row {
@@ -208,16 +207,18 @@ small {
 	text-decoration: none;
 	color: #333;
 }
+
 .ledger{
 	margin-bottom: 1.25em;;
 }
+
 .ledger-head {
 	padding: .25em;
  	border: 1px solid var(--secondary);
  	color:   var(--primary);
   	text-transform: uppercase;
 	text-align: center;
-	background: #fff;
+	background: var(--white);
  	border-radius:3px;
 }
 
@@ -240,13 +241,12 @@ small {
 }
 
 .ledger>a{
-	color:   var(--primary);
+	color: var(--primary);
 	text-decoration:none;
 }
 
 .carousel-indicators {
-	 bottom: .6%;
-
+	bottom: .6%;
 }
 
 .carousel-indicators li {
@@ -254,17 +254,47 @@ small {
     height: .67rem;
     width: .67rem;
     background-color: var(--info);
-	color:#fff;
+	color:var(--white);
   	border:1px solid var(--white);
-
 }
 
 .carousel-indicators li.active {
     background-color: var(--white);
 	color:#000;
-
 }
 
 a.carousel-control-next, a.carousel-control-prev{
 	width: 3rem;
+}
+
+.comment-text{
+	position: relative;
+}
+.comment-text .fa-close{
+	position:absolute;
+	text-align: center;
+	top:.37em;
+	right: .75em;
+	opacity: 50%;
+	border: 1px solid var(--secondary);
+	height: 1.5em;
+	width: 1.5em;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.comment-text i.fa-close:hover{
+	opacity: 100%;
+}
+
+h5.dash-header{
+	margin-bottom: 1rem ;
+	text-transform: uppercase;
+}
+* + h5.dash-header{
+border-top:var(--secondary) 1px solid;
+margin-top:2.5rem;
+padding-top: 1rem;
+
 }
