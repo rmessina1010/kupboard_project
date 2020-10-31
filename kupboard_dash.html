@@ -57,59 +57,127 @@
 	<div class="main-wrap ">
 		<div class="container-fluid container-xl py-4">
 			<div class="row">
-				<div class="col-md-6 pb-4">
-					<div class="input-group mb-3  no-gutters">
-						<input type="text" class="form-control">
-						<input type="number" min="0" class="form-control col-2">
-						<div class="input-group-append">
-							<div class="input-group-text">
-								<input type="checkbox">
-							</div>
-							<div class="input-group-text">
-								<input type="checkbox">
-							</div>
-							<div class="input-group-text">
-								<input type="checkbox">
+				<div class="col-md-6">
+					<h5 class="dash-header">Inventory</h5>
+					<button type="button" class="btn btn-secondary mt-2" id="addItem">Add Item</button>
+					<button type="submit" class="btn btn-primary mt-2" id="updateKtop" value="updateK">Update
+						Kupboard</button>
+					<div class="d-flex mt-3">
+						<div class="form-control bg-transparent border-0">Item</div>
+						<div class="form-control bg-transparent border-0 w-5rem ">Qty.</div>
+						<div class="input-check-match text-center">Req.</div>
+						<div class="input-check-match text-center">Act.</div>
+						<div class="input-check-match text-center">Del.</div>
+					</div>
+					<div id="itemInventory">
+						<div class="input-group mb-2 no-gutters">
+							<input class="form-control" type="text" name="inventoryItem[1]" id="inventoryItem-1"
+								value="an item">
+							<input class="form-control w-5rem" type="number" min="0" name="inventoryCt[1]"
+								name="inventoryCt-1" value="15">
+							<div class="input-group-append">
+								<div class="input-group-text">
+									<input name="request[1]" id="request-1" type="checkbox" checked>
+								</div>
+								<div class="input-group-text">
+									<input name="active[1]" id="active-" type="checkbox" checked>
+								</div>
+								<div class="input-group-text">
+									<input name="delete[1]" id="delete-1" type="checkbox">
+								</div>
 							</div>
 						</div>
+						<div class="input-group mb-2 no-gutters">
+							<input class="form-control" type="text" name="inventoryItem[1]" id="inventoryItem-1"
+								value="an item">
+							<input class="form-control w-5rem" type="number" min="0" name="inventoryCt[1]"
+								name="inventoryCt-1" value="15">
+							<div class="input-group-append">
+								<div class="input-group-text">
+									<input name="request[1]" id="request-1" type="checkbox" checked>
+								</div>
+								<div class="input-group-text">
+									<input name="active[1]" id="active-" type="checkbox" checked>
+								</div>
+								<div class="input-group-text">
+									<input name="delete[1]" id="delete-1" type="checkbox">
+								</div>
+							</div>
+						</div>
+						<div class="input-group mb-2 no-gutters">
+							<input class="form-control" type="text" name="inventoryItem[1]" id="inventoryItem-1"
+								value="an item">
+							<input class="form-control w-5rem" type="number" min="0" name="inventoryCt[1]"
+								name="inventoryCt-1" value="10">
+							<div class="input-group-append">
+								<div class="input-group-text">
+									<input name="request[1]" id="request-1" type="checkbox">
+								</div>
+								<div class="input-group-text">
+									<input name="active[1]" id="active-" type="checkbox" checked>
+								</div>
+								<div class="input-group-text">
+									<input name="delete[1]" id="delete-1" type="checkbox">
+								</div>
+							</div>
+						</div>
+						<div class="input-group mb-2 no-gutters">
+							<input class="form-control" type="text" name="inventoryItem[1]" id="inventoryItem-1"
+								value="an item">
+							<input class="form-control w-5rem" type="number" min="0" name="inventoryCt[1]"
+								name="inventoryCt-1" value="5">
+							<div class="input-group-append">
+								<div class="input-group-text">
+									<input name="request[1]" id="request-1" type="checkbox">
+								</div>
+								<div class="input-group-text">
+									<input name="active[1]" id="active-" type="checkbox" checked>
+								</div>
+								<div class="input-group-text">
+									<input name="delete[1]" id="delete-1" type="checkbox">
+								</div>
+							</div>
+						</div>
+
 					</div>
-					<hr class="d-block d-md-none mt-5">
+					<hr class="d-md-none mt-5 mb-1 bg-info">
 				</div>
 				<div class="col-md-6">
 					<h5 class="dash-header">Comments</h5>
 					<ul id="comments-area" class="list-unstyled">
 						<li class="comment-text">
-							<textarea name="comment" class="form-control col-12 mb-3">ss </textarea>
+							<textarea name="comment"
+								class="form-control col-12 mb-2">Pre Existing Comment Content</textarea>
 							<i class="fa fa-close"></i>
 						</li>
 						<li class="comment-text">
-							<textarea name="comment" class="form-control col-12 mb-3">ss </textarea>
+							<textarea name="comment"
+								class="form-control col-12 mb-2">Pre Existing Comment Content </textarea>
 							<i class="fa fa-close"></i>
 						</li>
 						<li class="comment-text">
-							<textarea name="comment" class="form-control col-12 mb-3">ss </textarea>
+							<textarea name="comment"
+								class="form-control col-12 mb-2">Pre Existing Comment Content </textarea>
 							<i class="fa fa-close"></i>
 						</li>
 					</ul>
-					<button type="button" class="btn btn-secondary btn-block" id="addAnounce">Add Comment
+					<button type="button" class="btn btn-secondary" id="addAnounce">Add Comment
 						Area</button>
 					<h5 class="dash-header">Images</h5>
 					<div class="row">
-						<div class="col-6">
-							<img src="media/images/240x180.png" alt="" class="img-thumbnail">
+						<div class="col-12 col-sm-4 col-md-6 align-items-center d-flex">
+							<img src="media/images/240x180.png" alt="" class="img-thumbnail mx-auto d-block">
 						</div>
-						<div class="col-6">
+						<div class="col-12 col-sm-8 col-md-6">
 							<label class="d-block">Header Image</label>
 							<div class="input-group mb-3 m-0">
 								<div class="custom-file">
 									<input type="file" class="custom-file-input" id="headerIMG"
-										aria-describedby="thumbIMG">
+										aria-describedby="headerIMG">
 									<label class="custom-file-label" for="headerIMG">Choose file</label>
 								</div>
 							</div>
-
 							<label class="d-block">Thumbnail Image</label>
-
 							<div class="input-group mb-3 m-0">
 								<div class="custom-file">
 									<input type="file" class="custom-file-input" id="thumbIMG"
@@ -121,196 +189,277 @@
 					</div>
 
 					<h5 class="dash-header">Hours</h5>
-					<div class="row">
-						<div class="form-group col-3">
-							<label for="address">Day</label>
-							<select name="days-1" id="days1" class="form-control" required>
-								<option value="">Select:</option>
-								<option value="1">Mon</option>
-								<option value="2">Tue</option>
-								<option value="3">Wed</option>
-								<option value="4">Thrs</option>
-								<option value="5">Fri</option>
-								<option value="6">Sat</option>
-								<option value="7">Sun</option>
-							</select>
+					<div class="row kup-hour">
+						<div class="col-12 col-sm-6 col-md-12  col-lg-6 mb-1 pr-lg-3 pr-md-0 pr-sm-3">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text" for="daysFrom">From</label>
+								</div>
+								<select name="daysFrom" id="daysFrom" class="custom-select">
+									<option value="">Day...</option>
+									<option value="1">Mon</option>
+									<option value="2">Tue</option>
+									<option value="3">Wed</option>
+									<option value="4">Thrs</option>
+									<option value="5">Fri</option>
+									<option value="6">Sat</option>
+									<option value="7">Sun</option>
+								</select>
+								<div class="input-group-append">
+									<label class="input-group-text" for="daysTo"> to </label>
+								</div>
+								<select name="daysTo" id="ddaysTo" class="custom-select">
+									<option value="">Day:</option>
+									<option value="1">Mon</option>
+									<option value="2">Tue</option>
+									<option value="3">Wed</option>
+									<option value="4">Thrs</option>
+									<option value="5">Fri</option>
+									<option value="6">Sat</option>
+									<option value="7">Sun</option>
+								</select>
+							</div>
 						</div>
-						<div class="form-group col-3">
-							<label for="address">Day</label>
-							<select name="days-1" id="days1" class="form-control" required>
-								<option value="">Select:</option>
-								<option value="1">Mon</option>
-								<option value="2">Tue</option>
-								<option value="3">Wed</option>
-								<option value="4">Thrs</option>
-								<option value="5">Fri</option>
-								<option value="6">Sat</option>
-								<option value="7">Sun</option>
-							</select>
-						</div>
-						<div class="form-group col-3">
-							<label for="address">Open</label>
-							<input class="form-control" type="text" name="address" id="address"
-								placeholder="628 N First" required>
-						</div>
-						<div class="form-group col-3">
-							<label for="address">Close</label>
-							<input class="form-control" type="text" name="address" id="address"
-								placeholder="628 N First" required>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-3">
-							<label for="address">Day</label>
-							<select name="days-1" id="days1" class="form-control" required>
-								<option value="">Select:</option>
-								<option value="1">Mon</option>
-								<option value="2">Tue</option>
-								<option value="3">Wed</option>
-								<option value="4">Thrs</option>
-								<option value="5">Fri</option>
-								<option value="6">Sat</option>
-								<option value="7">Sun</option>
-							</select>
-						</div>
-						<div class="form-group col-3">
-							<label for="address">Day</label>
-							<select name="days-1" id="days1" class="form-control" required>
-								<option value="">Select:</option>
-								<option value="1">Mon</option>
-								<option value="2">Tue</option>
-								<option value="3">Wed</option>
-								<option value="4">Thrs</option>
-								<option value="5">Fri</option>
-								<option value="6">Sat</option>
-								<option value="7">Sun</option>
-							</select>
-						</div>
-						<div class="form-group col-3">
-							<label for="address">Open</label>
-							<input class="form-control" type="text" name="address" id="address"
-								placeholder="628 N First" required>
-						</div>
-						<div class="form-group col-3">
-							<label for="address">Close</label>
-							<input class="form-control" type="text" name="address" id="address"
-								placeholder="628 N First" required>
+						<div class="col-12 col-sm-6 col-md-12  col-lg-6 mb-1">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text input-group-prepend" for="timeFrom">From</label>
+								</div>
+								<input class="form-control" type="text" name="timeFrom" id="timeFrom"
+									placeholder="10:00am">
+								<div class="input-group-append">
+									<label class="input-group-text" for="timeTo"> to </label>
+								</div>
+								<input class="form-control" type="text" name="timeTo" id="timeTo" placeholder="10:00am">
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="form-group col-3">
-							<label for="address">Day</label>
-							<select name="days-1" id="days1" class="form-control" required>
-								<option value="">Select:</option>
-								<option value="1">Mon</option>
-								<option value="2">Tue</option>
-								<option value="3">Wed</option>
-								<option value="4">Thrs</option>
-								<option value="5">Fri</option>
-								<option value="6">Sat</option>
-								<option value="7">Sun</option>
-							</select>
+					<div class="row kup-hour">
+						<div class="col-12 col-sm-6 col-md-12  col-lg-6 mb-1 pr-lg-3 pr-md-0 pr-sm-3">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text" for="daysFrom">From</label>
+								</div>
+								<select name="daysFrom" id="daysFrom" class="custom-select">
+									<option value="">Day...</option>
+									<option value="1">Mon</option>
+									<option value="2">Tue</option>
+									<option value="3">Wed</option>
+									<option value="4">Thrs</option>
+									<option value="5">Fri</option>
+									<option value="6">Sat</option>
+									<option value="7">Sun</option>
+								</select>
+								<div class="input-group-append">
+									<label class="input-group-text" for="daysTo"> to </label>
+								</div>
+								<select name="daysTo" id="ddaysTo" class="custom-select">
+									<option value="">Day:</option>
+									<option value="1">Mon</option>
+									<option value="2">Tue</option>
+									<option value="3">Wed</option>
+									<option value="4">Thrs</option>
+									<option value="5">Fri</option>
+									<option value="6">Sat</option>
+									<option value="7">Sun</option>
+								</select>
+							</div>
 						</div>
-						<div class="form-group col-3">
-							<label for="address">Day</label>
-							<select name="days-1" id="days1" class="form-control" required>
-								<option value="">Select:</option>
-								<option value="1">Mon</option>
-								<option value="2">Tue</option>
-								<option value="3">Wed</option>
-								<option value="4">Thrs</option>
-								<option value="5">Fri</option>
-								<option value="6">Sat</option>
-								<option value="7">Sun</option>
-							</select>
-						</div>
-						<div class="form-group col-3">
-							<label for="address">Open</label>
-							<input class="form-control" type="text" name="address" id="address"
-								placeholder="628 N First" required>
-						</div>
-						<div class="form-group col-3">
-							<label for="address">Close</label>
-							<input class="form-control" type="text" name="address" id="address"
-								placeholder="628 N First" required>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-3">
-							<label for="address">Day</label>
-							<select name="days-1" id="days1" class="form-control" required>
-								<option value="">Select:</option>
-								<option value="1">Mon</option>
-								<option value="2">Tue</option>
-								<option value="3">Wed</option>
-								<option value="4">Thrs</option>
-								<option value="5">Fri</option>
-								<option value="6">Sat</option>
-								<option value="7">Sun</option>
-							</select>
-						</div>
-						<div class="form-group col-3">
-							<label for="address">Day</label>
-							<select name="days-1" id="days1" class="form-control" required>
-								<option value="">Select:</option>
-								<option value="1">Mon</option>
-								<option value="2">Tue</option>
-								<option value="3">Wed</option>
-								<option value="4">Thrs</option>
-								<option value="5">Fri</option>
-								<option value="6">Sat</option>
-								<option value="7">Sun</option>
-							</select>
-						</div>
-						<div class="form-group col-3">
-							<label for="address">Open</label>
-							<input class="form-control" type="text" name="address" id="address"
-								placeholder="628 N First" required>
-						</div>
-						<div class="form-group col-3">
-							<label for="address">Close</label>
-							<input class="form-control" type="text" name="address" id="address"
-								placeholder="628 N First" required>
+						<div class="col-12 col-sm-6 col-md-12  col-lg-6 mb-1">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text input-group-prepend" for="timeFrom">From</label>
+								</div>
+								<input class="form-control" type="text" name="timeFrom" id="timeFrom"
+									placeholder="10:00am">
+								<div class="input-group-append">
+									<label class="input-group-text" for="timeTo"> to </label>
+								</div>
+								<input class="form-control" type="text" name="timeTo" id="timeTo" placeholder="10:00am">
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="form-group col-3">
-							<label for="address">Day</label>
-							<select name="days-1" id="days1" class="form-control" required>
-								<option value="">Select:</option>
-								<option value="1">Mon</option>
-								<option value="2">Tue</option>
-								<option value="3">Wed</option>
-								<option value="4">Thrs</option>
-								<option value="5">Fri</option>
-								<option value="6">Sat</option>
-								<option value="7">Sun</option>
-							</select>
+					<div class="row kup-hour">
+						<div class="col-12 col-sm-6 col-md-12  col-lg-6 mb-1 pr-lg-3 pr-md-0 pr-sm-3">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text" for="daysFrom">From</label>
+								</div>
+								<select name="daysFrom" id="daysFrom" class="custom-select">
+									<option value="">Day...</option>
+									<option value="1">Mon</option>
+									<option value="2">Tue</option>
+									<option value="3">Wed</option>
+									<option value="4">Thrs</option>
+									<option value="5">Fri</option>
+									<option value="6">Sat</option>
+									<option value="7">Sun</option>
+								</select>
+								<div class="input-group-append">
+									<label class="input-group-text" for="daysTo"> to </label>
+								</div>
+								<select name="daysTo" id="ddaysTo" class="custom-select">
+									<option value="">Day:</option>
+									<option value="1">Mon</option>
+									<option value="2">Tue</option>
+									<option value="3">Wed</option>
+									<option value="4">Thrs</option>
+									<option value="5">Fri</option>
+									<option value="6">Sat</option>
+									<option value="7">Sun</option>
+								</select>
+							</div>
 						</div>
-						<div class="form-group col-3">
-							<label for="address">Day</label>
-							<select name="days-1" id="days1" class="form-control" required>
-								<option value="">Select:</option>
-								<option value="1">Mon</option>
-								<option value="2">Tue</option>
-								<option value="3">Wed</option>
-								<option value="4">Thrs</option>
-								<option value="5">Fri</option>
-								<option value="6">Sat</option>
-								<option value="7">Sun</option>
-							</select>
-						</div>
-						<div class="form-group col-3">
-							<label for="address">Open</label>
-							<input class="form-control" type="text" name="address" id="address"
-								placeholder="628 N First" required>
-						</div>
-						<div class="form-group col-3">
-							<label for="address">Close</label>
-							<input class="form-control" type="text" name="address" id="address"
-								placeholder="628 N First" required>
+						<div class="col-12 col-sm-6 col-md-12  col-lg-6 mb-1">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text input-group-prepend" for="timeFrom">From</label>
+								</div>
+								<input class="form-control" type="text" name="timeFrom" id="timeFrom"
+									placeholder="10:00am">
+								<div class="input-group-append">
+									<label class="input-group-text" for="timeTo"> to </label>
+								</div>
+								<input class="form-control" type="text" name="timeTo" id="timeTo" placeholder="10:00am">
+							</div>
 						</div>
 					</div>
+					<div class="row kup-hour">
+						<div class="col-12 col-sm-6 col-md-12  col-lg-6 mb-1 pr-lg-3 pr-md-0 pr-sm-3">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text" for="daysFrom">From</label>
+								</div>
+								<select name="daysFrom" id="daysFrom" class="custom-select">
+									<option value="">Day...</option>
+									<option value="1">Mon</option>
+									<option value="2">Tue</option>
+									<option value="3">Wed</option>
+									<option value="4">Thrs</option>
+									<option value="5">Fri</option>
+									<option value="6">Sat</option>
+									<option value="7">Sun</option>
+								</select>
+								<div class="input-group-append">
+									<label class="input-group-text" for="daysTo"> to </label>
+								</div>
+								<select name="daysTo" id="ddaysTo" class="custom-select">
+									<option value="">Day:</option>
+									<option value="1">Mon</option>
+									<option value="2">Tue</option>
+									<option value="3">Wed</option>
+									<option value="4">Thrs</option>
+									<option value="5">Fri</option>
+									<option value="6">Sat</option>
+									<option value="7">Sun</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-12  col-lg-6 mb-1">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text input-group-prepend" for="timeFrom">From</label>
+								</div>
+								<input class="form-control" type="text" name="timeFrom" id="timeFrom"
+									placeholder="10:00am">
+								<div class="input-group-append">
+									<label class="input-group-text" for="timeTo"> to </label>
+								</div>
+								<input class="form-control" type="text" name="timeTo" id="timeTo" placeholder="10:00am">
+							</div>
+						</div>
+					</div>
+					<div class="row kup-hour">
+						<div class="col-12 col-sm-6 col-md-12  col-lg-6 mb-1 pr-lg-3 pr-md-0 pr-sm-3">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text" for="daysFrom">From</label>
+								</div>
+								<select name="daysFrom" id="daysFrom" class="custom-select">
+									<option value="">Day...</option>
+									<option value="1">Mon</option>
+									<option value="2">Tue</option>
+									<option value="3">Wed</option>
+									<option value="4">Thrs</option>
+									<option value="5">Fri</option>
+									<option value="6">Sat</option>
+									<option value="7">Sun</option>
+								</select>
+								<div class="input-group-append">
+									<label class="input-group-text" for="daysTo"> to </label>
+								</div>
+								<select name="daysTo" id="ddaysTo" class="custom-select">
+									<option value="">Day:</option>
+									<option value="1">Mon</option>
+									<option value="2">Tue</option>
+									<option value="3">Wed</option>
+									<option value="4">Thrs</option>
+									<option value="5">Fri</option>
+									<option value="6">Sat</option>
+									<option value="7">Sun</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-12  col-lg-6 mb-1">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text input-group-prepend" for="timeFrom">From</label>
+								</div>
+								<input class="form-control" type="text" name="timeFrom" id="timeFrom"
+									placeholder="10:00am">
+								<div class="input-group-append">
+									<label class="input-group-text" for="timeTo"> to </label>
+								</div>
+								<input class="form-control" type="text" name="timeTo" id="timeTo" placeholder="10:00am">
+							</div>
+						</div>
+					</div>
+					<div class="row kup-hour">
+						<div class="col-12 col-sm-6 col-md-12  col-lg-6 mb-1 pr-lg-3 pr-md-0 pr-sm-3">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text" for="daysFrom">From</label>
+								</div>
+								<select name="daysFrom" id="daysFrom" class="custom-select">
+									<option value="">Day...</option>
+									<option value="1">Mon</option>
+									<option value="2">Tue</option>
+									<option value="3">Wed</option>
+									<option value="4">Thrs</option>
+									<option value="5">Fri</option>
+									<option value="6">Sat</option>
+									<option value="7">Sun</option>
+								</select>
+								<div class="input-group-append">
+									<label class="input-group-text" for="daysTo"> to </label>
+								</div>
+								<select name="daysTo" id="ddaysTo" class="custom-select">
+									<option value="">Day:</option>
+									<option value="1">Mon</option>
+									<option value="2">Tue</option>
+									<option value="3">Wed</option>
+									<option value="4">Thrs</option>
+									<option value="5">Fri</option>
+									<option value="6">Sat</option>
+									<option value="7">Sun</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-12  col-lg-6 mb-1">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text input-group-prepend" for="timeFrom">From</label>
+								</div>
+								<input class="form-control" type="text" name="timeFrom" id="timeFrom"
+									placeholder="10:00am">
+								<div class="input-group-append">
+									<label class="input-group-text" for="timeTo"> to </label>
+								</div>
+								<input class="form-control" type="text" name="timeTo" id="timeTo" placeholder="10:00am">
+							</div>
+						</div>
+					</div>
+
 					<h5 class="dash-header">Location</h5>
 					<div class="form-group">
 						<label for="address">Street Address</label>
@@ -355,6 +504,12 @@
 						<label>Email</label>
 						<input type="text" name="email" id="email" class="form-control">
 					</div>
+
+					<h5 class="dash-header">Account</h5>
+					<button class="btn btn-secondary mr-3" name="killKup" id="killKup" value="killKup">Delete
+						Kupboard</button>
+					<button type="submit" class="btn btn-primary" id="updateKbottom" value="updateK">Update
+						Kupboard</button>
 				</div>
 			</div>
 		</div>

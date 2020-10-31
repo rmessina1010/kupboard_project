@@ -8,20 +8,37 @@ $(function () {
         function () {
             $("#comments-area").append(
                 `<li class="comment-text">
-                    <textarea name="comment" class="form-control col-12 mb-3">New Element</textarea>
+                    <textarea name="comment" class="form-control col-12 mb-2">New Comment</textarea>
                     <i class="fa fa-close"></i>
                 </li>`
             );
         });
 
-});
 
-let li = document.createElement('li');
-li.className = "comment-text";
-let txta = document.createElement('textArea');
-txta.className = "form-control col-12 mb-3";
-txta.name = "comment[]";
-let icon = document.createElement('i');
-icon.className = "fa fa-close";
-li.appendChild(txta);
-li.appendChild(icon);
+    $("#addItem").on('click',
+        function () {
+            let itemHTML = `<div class="input-group mb-2 no-gutters">
+							<input type="text" class="form-control">
+							<input type="number" min="0" class="form-control rm-w-12">
+							<div class="input-group-append">
+								<div class="input-group-text">
+									<input name="request[]" id="request" type="checkbox">
+								</div>
+								<div class="input-group-text">
+									<input name="active[]" id="active" type="checkbox">
+								</div>
+								<div class="input-group-text">
+									<input name="delete[]" id="delete" type="checkbox">
+								</div>
+							</div>
+						</div>
+`;
+            $("#itemInventory").prepend(itemHTML);
+        });
+    $(".custom-file input").on('change', function () {
+        let fileName = this.value.replace('C:\\fakepath\\', '');
+        fileName = fileName ? fileName : 'Choose file';
+        $('label[for="' + this.id + '"]')[0].innerHTML = fileName;
+
+    });
+});
