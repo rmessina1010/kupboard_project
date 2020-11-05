@@ -7,10 +7,14 @@ $(function () {
     $("#addAnounce").on('click',
         function () {
             $("#comments-area").append(
-                `<li class="comment-text">
-                    <textarea name="comment" class="form-control col-12 mb-2">New Comment</textarea>
-                    <i class="fa fa-close"></i>
-                </li>`
+                `<li class="comment-text p-2">
+							<div class="form-group mb-0">
+								<label for="commentTitle[]">Comment:</label>
+								<input class="form-control" name="commentTitle[]" id="commentTitle[]">
+								<textarea name="comment[]"class="form-control col-12 mt-1"></textarea>
+							</div>
+							<i class="fa fa-close"></i>
+				</li>`
             );
         });
 
