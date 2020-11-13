@@ -1,13 +1,13 @@
 $(function () {
-    $("#comments-area").on('click',
-        function (event) {
-            if (event.target.classList.contains('fa-close')) $(event.target.parentNode).remove();
-        });
+	$("#comments-area").on('click',
+		function (event) {
+			if (event.target.classList.contains('fa-close')) $(event.target.parentNode).remove();
+		});
 
-    $("#addAnounce").on('click',
-        function () {
-            $("#comments-area").append(
-                `<li class="comment-text p-2">
+	$("#addAnounce").on('click',
+		function () {
+			$("#comments-area").append(
+				`<li class="comment-text p-2">
 							<div class="form-group mb-0">
 								<label for="commentTitle[]">Comment:</label>
 								<input class="form-control" name="commentTitle[]" id="commentTitle[]">
@@ -15,13 +15,13 @@ $(function () {
 							</div>
 							<i class="fa fa-close"></i>
 				</li>`
-            );
-        });
+			);
+		});
 
 
-    $("#addItem").on('click',
-        function () {
-            let itemHTML = `<div class="input-group mb-2 no-gutters">
+	$("#addItem").on('click',
+		function () {
+			let itemHTML = `<div class="input-group mb-2 no-gutters">
 							<input type="text" class="form-control">
 							<input type="number" min="0" class="form-control rm-w-12">
 							<div class="input-group-append">
@@ -37,12 +37,26 @@ $(function () {
 							</div>
 						</div>
 `;
-            $("#itemInventory").prepend(itemHTML);
-        });
-    $(".custom-file input").on('change', function () {
-        let fileName = this.value.replace('C:\\fakepath\\', '');
-        fileName = fileName ? fileName : 'Choose file';
-        $('label[for="' + this.id + '"]')[0].innerHTML = fileName;
+			$("#itemInventory").prepend(itemHTML);
+		});
+	$(".custom-file input").on('change', function () {
+		let fileName = this.value.replace('C:\\fakepath\\', '');
+		fileName = fileName ? fileName : 'Choose file';
+		$('label[for="' + this.id + '"]')[0].innerHTML = fileName;
 
-    });
+	});
+
+
+	$("#zip").on('blur', (event) => {
+		$.ajax({
+			method: 'GET',
+			url: 'http://api.zippopotam.us/us/' + event.target.value,
+			success: (results) => {
+				console.log(results.places[0]);
+				$('#state').val(results.places[0]['state abbreviation']);
+				$('#city').val(results.places[0]['place name']);
+			}
+		});
+	});
 });
+
